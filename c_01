@@ -1,0 +1,157 @@
+// #include<stdio.h>
+
+// int main(){
+//     int a; // Variable Declaration
+//     a = 6;  // Variable initialization
+//     printf("%d" , a);
+//     return 0;
+// }  
+
+// data typs in c
+
+// #include <stdio.in>
+
+// int main(){
+//     int age = 22;  //1
+//     int pi = 3.14;  //2
+//     char hashtag = '#'. //3
+//     return 0;
+// }
+
+
+
+
+// #include <stdio.h>
+
+// int main(){
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//       int a;
+//     scanf("%d", &a);
+//     printf("The value of a is %d", a);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main(){
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     printf("Hello C\n");
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     int age = 22;
+//     printf("age is %d\n", age); //%d-integers and %f for real nos and %c for characters are format specifiers which help user input smthing
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main(){
+//     float pi = 3.14;
+//     printf("pi is %f\n", pi); 
+//     return 0;
+// }
+
+// #include <stdio.h>
+
+// int main(){
+//     char star = '*';
+//     printf("star is %c\n", star); 
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int age;
+//     printf("Enter age:");
+//     scanf("%d", &age);
+//     printf("age is: %d\n", age);
+//     return 0;
+// }
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int a, b;
+//     printf("enter a\n");
+//     scanf("%d", &a);
+
+//     printf("enter b\n");
+//     scanf("%d", &b);
+
+//     int sum = a + b;
+//     printf("sum is : %d", sum);
+//     return 0;
+// }
+
+// another way to do the same sum is as follows and with a little bit of less effort too
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int a, b;
+//     printf("enter a\n");
+//     scanf("%d", &a);
+
+//     printf("enter b\n");
+//     scanf("%d", &b);
+
+    
+//     printf("sum is : %d", a + b );
+//     return 0;
+// }
+
+//question 1 area of square as input
+
+// #include<stdio.h>
+// int main() {
+//     float side;
+//     printf("Enter side");
+//     scanf("%f", &side);
+
+//     printf("Area of square is: %f", side * side);
+//     return 0;
+// }
+
+
+// question 2
+//area of a circle
+
+// #include <stdio.h>
+
+// int main(){
+//     float radius;
+//     printf("Enter radius");
+//     scanf("%f", &radius);
+
+//     printf("AREA OF CIRCLE:%f",3.14*radius*radius);
+//     return 0;
+// }
+
+
+
+
+
+
+
+
