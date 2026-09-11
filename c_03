@@ -1,0 +1,304 @@
+// CONDITIONAL STATEMENTS
+
+// if(COnditon){
+        // do something true
+
+//else 
+    //do something false
+
+//Example    
+
+// #include <stdio.h>
+
+// int main(){
+//     int age = 19;
+//     printf("Enter age: ");
+//     scanf("%d", &age);
+
+//     if(age > 18){
+//         printf("adult \n");
+//         printf("They can vote\n");
+//     }
+//     else{
+//         printf("not adult \n");
+//     }
+//     printf("Thank You\n");
+//     return 0;
+// }
+
+//else if statement 
+
+// if(Condition 1){
+       //do something true
+// }
+
+// else if(Condition 2){
+//     //do something if 1st is False 7 2nd True
+
+// Example
+
+// #include <stdio.h>
+
+// int main(){
+//     int age = 19;
+//     printf("Enter age: ");
+//     scanf("%d", &age);
+
+//     if(age > 18){
+//         printf("adult \n");
+//         printf("They can vote\n");
+//     }
+
+//     else if(age > 13 && age < 18){
+//         printf("teenager\n");
+//     }
+//     else{
+//         printf("child \n");
+//     }
+//     printf("Thank You\n");
+//     return 0;
+// }
+
+
+
+// CONDITIONAL OPERATORS
+
+// 1.  TERNARY operator
+//"condition? do something if true: do something if false; "
+
+// #include <stdio.h>
+
+// int main(){
+//     int age = 19;
+//     printf("Enter age: ");
+//     scanf("%d", &age);
+
+//     age >= 18 ? printf("Adult \n") : printf("not adult \n");
+//     printf("Thank You\n");
+//     return 0;
+// }
+
+//2. Switch operator
+
+// #include<stdio.h>
+
+// int main(){
+//     int day; // 1- mon 2- tues and so on..
+//     printf("Enter day(1-7): ");
+//     scanf("%d", &day);
+
+//     switch (day) {
+//         case 1 : printf("Monday \n");
+//                  break;
+//         case 2 : printf("Tuesday \n");
+//                  break;
+//         case 3 : printf("wednesday \n");
+//                  break;
+//         case 4 : printf("thursday \n");
+//                  break;
+//         case 5 : printf("friday \n");
+//                  break;
+//         case 6 : printf("saturday \n");
+//                  break;
+//         case 7 : printf("Sunday \n");
+//                  break;
+//         default : printf("Not a valid day");
+//         return 0;
+      
+//     }
+
+   
+// }
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int num;
+//     printf("Enter number:");
+//     scanf("%d", &num);
+
+//     if(num >= 0){
+//         printf("positive\n");
+//         if(num % 2 == 0){
+//             printf("even");
+//         }
+//         else{
+//             printf("odd\n");
+//         }
+//     }
+//     else {
+//         printf("negative\n");
+//     }
+// }
+
+//Practice question 9
+
+//WAP to check if a student passed or failed
+    //marks>30 is pass
+    //marks<= 30 is Fail
+
+// #include <stdio.h>
+
+// int main(){
+//     int marks;
+//     printf("Enter number(1-100): ");
+//     scanf("%d", &marks);
+
+    // if(marks >= 0 && marks <= 30){
+    //     printf("Failed\n");
+    // } else if(marks >30 && marks <= 100){
+    //     printf("Pass\n ");
+    // }else {
+    //     printf("wrong marks\n");
+    // }
+
+//     marks <= 30 ? printf("FAIL\n") : printf("PASS\n"); // this is a TERNARY operation in which we can do the code in a single line
+    
+//     return 0;
+    
+// }
+
+
+//Practice question 10
+//WAP to give grades to a student
+  // marks < 30 is C
+  // 30 <= marks < 70 is B
+  // 70 <= marks < 90 is A
+  // 90 <= marks <=100 is A+
+
+
+
+// #include <stdio.h>
+
+// int main(){
+//     int marks;
+//     printf("Enter number(1-100): ");
+//     scanf("%d", &marks);  
+
+//     if(marks <30 ){
+//         printf("C \n");
+//     }
+//     else if(marks >=30 && marks< 70){
+//         printf("B\n");
+//     }
+//     else if(marks >= 70 && marks < 90){
+//         printf("A\n");
+//     }
+//     else {
+//         printf("A+\n");
+//     }
+
+
+//     return 0;
+
+// }
+
+
+
+//Practice question 12 
+//WAP to find if a character entered by user is upper case or not
+
+
+// #include <stdio.h>
+
+// int main(){
+//     char ch;
+//     printf("Enter character : ");
+//     scanf("%c", &ch);
+
+//     if(ch >= 'A' && ch <= 'Z'){
+//         printf("Upper Case\n");
+//     }
+//     else if(ch >= 'a' && ch <= 'z'){
+//         printf("lower case\n");
+//     }
+//     else {
+//         printf("not english character\n");
+//     }
+
+
+//     return 0;
+// }
+
+
+
+
+//Homework questions
+
+//Q1. Write a program in c to check if the given no is armstrong number or not.
+
+//Q2. Write a program to check if the given no is a natural number or not.
+
+
+//Ans 1. 
+
+// #include <stdio.h>
+
+// int main() {
+//     int n, original, digit, sum = 0;
+
+//     printf("Enter a number: ");
+//     scanf("%d", &n);
+
+//     original = n;
+
+//     digit = n % 10;
+//     sum = sum + digit * digit * digit;
+//     n = n / 10;
+
+//     digit = n % 10;
+//     sum = sum + digit * digit * digit;
+//     n = n / 10;
+
+//     digit = n % 10;
+//     sum = sum + digit * digit * digit;
+
+//     printf("Sum = %d\n", sum);
+
+//     if (sum == original)
+//         printf("Armstrong number");
+//     else
+//         printf("Not an Armstrong number");
+
+//     return 0;
+// }
+
+
+//Answer 2..
+
+// #include <stdio.h>
+
+// int main(){
+//     int n;
+
+//     printf("Enter a number; ");
+//     scanf("%d", &n);
+
+//     if(n>0){
+//         printf("NATURAL NUMBER\n");
+//     }
+//     else{
+//         printf("NOT A NATURAL NUMBER\n");
+//     }
+
+//     return 0;
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
